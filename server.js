@@ -38,7 +38,6 @@ mongoose.connect(mongoUrl, options);
 mongoose.connection.once('open', console.log.bind(console, 'Successfully connected to database'))
 mongoose.connection.on('error', console.error.bind(console, 'connection error: '));
 
-
 const port = process.env.PORT || 3000
 
 const recentSearchSchema = mongoose.Schema({
@@ -48,18 +47,6 @@ const recentSearchSchema = mongoose.Schema({
 
 const RecentSearch = mongoose.model('recentSearch', recentSearchSchema);
 
-// create new recent search
-// !!! Test Data !!!
-/*
-
-
-
-*/
-
-// function sendResults(data, res) {
-//   res.set('Content-Type', 'text/html');
-//   res.send(data);
-// }
 
 function saveSearchTerm(term) {
   const recentSearch = new RecentSearch({
@@ -72,6 +59,8 @@ function saveSearchTerm(term) {
   });
 
 }
+
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
   res.send('Front end');
