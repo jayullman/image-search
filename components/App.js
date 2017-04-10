@@ -6,8 +6,8 @@ export default function App() {
     <div>
       <h1>React front end!</h1>
       <Header />
-      {/*<Body />
-      <Footer />*/}
+      {/*<Body />*/}
+      <Footer />
     </div>
   );
 }
