@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Header from './Header';
+import Footer from './Footer';
+import Body from './Body';
+
 export default function App() {
   return (
     <div>
-      <h1>React front end!</h1>
       <Header />
-      {/*<Body />*/}
+      <Body />
       <Footer />
     </div>
   );
