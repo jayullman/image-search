@@ -47,10 +47,6 @@ function saveSearchTerm(term) {
 
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
-  res.send('Front end');
-});
-
 app.get('/api/imagesearch/:term', (req, res) => {
   // res.send(`term: ${req.params.term}, offset: ${req.query.offset}`);
   const term = req.params.term;
