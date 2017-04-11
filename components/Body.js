@@ -4,7 +4,10 @@ export default function App() {
   return (
     <div className="bodyContent">
       <p>
-        This API microservice will shorten a valid URL. The shortened URLs are stored in a MongoDB database. 
+        This API microservice will return image search results using Google's custom search API. Recent searches
+        are stored in a MongoDB database and can be queried.
+      </p>
+      <p> 
         Use the <code>/api/imagesearch/</code> endpoint to search for a term. Use the query <code>?offset=[0-9]</code>
         for different pages of results.
       </p>

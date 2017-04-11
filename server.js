@@ -1,22 +1,7 @@
-// API Key: AIzaSyBf8ZMDOePSdOUWLQ0bxi0ll3Vs37UcDNM
-// Search Engine ID: 012894019053467490541:qb36mkgv7wu
-
-// Search URI: https://www.googleapis.com/customsearch/v1?parameters
-
-// Custom Search URI: https://www.googleapis.com/customsearch/v1?key=AIzaSyBf8ZMDOePSdOUWLQ0bxi0ll3Vs37UcDNM&cx=012894019053467490541:qb36mkgv7wu&q=cats
-
-// Image parameter: searchType=image
-
-// pagination: start=[The index of the first result to return]
-// multiply by 10 for different pages
-
-
-/* complete image URI (cat search): 
-https://www.googleapis.com/customsearch/v1?key=AIzaSyBf8ZMDOePSdOUWLQ0bxi0ll3Vs37UcDNM&cx=012894019053467490541:qb36mkgv7wu&searchType=image&q=cats
-*/
-
-const API_KEY = 'AIzaSyBf8ZMDOePSdOUWLQ0bxi0ll3Vs37UcDNM';
-const SEARCH_ENGINE_ID = '012894019053467490541:qb36mkgv7wu';
+// pull in environment variables from .env file
+require('dotenv').config();
+const API_KEY = process.env.API_KEY;
+const SEARCH_ENGINE_ID = process.env.SEARCH_ENGINE_ID;
 
 const express = require('express');
 const app = express();
@@ -70,7 +55,6 @@ app.get('/api/imagesearch/:term', (req, res) => {
   // res.send(`term: ${req.params.term}, offset: ${req.query.offset}`);
   const term = req.params.term;
   const page = parseInt(req.query.offset) * 10;
-  console.log(page);
 
   let url = `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${SEARCH_ENGINE_ID}&searchType=image&q=${term}`;
 
