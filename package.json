@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
     "serve": "webpack-dev-server --host 0.0.0.0 --content-base ./public",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "deploy": "git push heroku master"
   },
   "repository": {
     "type": "git",
