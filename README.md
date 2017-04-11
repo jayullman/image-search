@@ -1,4 +1,4 @@
-# image-search
+# Image Search Abstraction Layer
 
 Live site: https://fccapi-imagesearch.herokuapp.com/
 
