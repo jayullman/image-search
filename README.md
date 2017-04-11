@@ -4,7 +4,7 @@ Live site: https://fccapi-imagesearch.herokuapp.com/
 
 This API microservice will shorten a valid URL. The shortened URLs are stored in a MongoDB database. 
 
-Use the /api/imagesearch/ endpoint to search for a term. Use the query ?offset=[0-9]for different pages of results.
+Use the /api/imagesearch/ endpoint to search for a term. Use the query ?offset=[0-9] for different pages of results.
 
 Use the /api/latest/imagesearch/ endpoint to query the MongoDB database for a list of the most recent searches.
 
