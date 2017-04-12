@@ -16,7 +16,7 @@ export default function App() {
       </p>
       <h3>Usage:</h3>
       <code>
-        https://XXXXXXX.herokuapp.com/api/imagesearch/dachshunds
+        https://fccapi-imagesearch.herokuapp.com//api/imagesearch/dachshunds
       </code>
       <p>
         The server will return a JSON array of objects in the following format:
@@ -33,7 +33,7 @@ export default function App() {
 }
       </code><br/><br/>
       <code>
-        https://XXXXXXX.herokuapp.com/api/imagesearch/dachshunds
+        https://fccapi-imagesearch.herokuapp.com//api/imagesearch/dachshunds
       </code>
       <p>
         Using the recent search endpoint will return a JSON array of objects in the following format:
@@ -48,7 +48,7 @@ export default function App() {
       </code>
       <p>
         This project was built with Node.js, Express, MongoDB, and uses a React.js front end.
-        To learn more about this project, pleasde visit the <a href="https://github.com/libeja/image-search" target="_blank">
+        To learn more about this project, please visit the <a href="https://github.com/libeja/image-search" target="_blank">
         Github{'\u00A0'}project{'\u00A0'}page</a>.
       </p>
 
