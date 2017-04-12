@@ -16,7 +16,7 @@ export default function App() {
       </p>
       <h3>Usage:</h3>
       <code>
-        https://fccapi-imagesearch.herokuapp.com//api/imagesearch/dachshunds
+        https://fccapi-imagesearch.herokuapp.com/api/imagesearch/dachshunds
       </code>
       <p>
         The server will return a JSON array of objects in the following format:
@@ -33,7 +33,7 @@ export default function App() {
 }
       </code><br/><br/>
       <code>
-        https://fccapi-imagesearch.herokuapp.com//api/imagesearch/dachshunds
+        https://fccapi-imagesearch.herokuapp.com/api/imagesearch/dachshunds
       </code>
       <p>
         Using the recent search endpoint will return a JSON array of objects in the following format:
